@@ -5,11 +5,12 @@ const index = Router()
 
 index.get("/", (request, response) => {
 	if (request.session.list) response.send(`
-		<p>The list in a session: ${request.session.list}</p>
+		<h1>The list in a session: ${request.session.list}</h1>
 		<a href="/add">Maybe add one?</a>
+		<a href="/destroy">Destroy the session</a>
 	`)
 	else response.send(`
-		<p>You didn't create any list in a session</p>
+		<h1>You didn't create any list in a session</h1>
 		<a href="/add">Try to add one!</a>
 	`)
 })

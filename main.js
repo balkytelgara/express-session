@@ -5,6 +5,7 @@ const app = express()
 
 const indexRouter = require("./routes/index")
 const addRouter = require("./routes/add")
+const destroyRouter = require("./routes/destroy")
 
 const PORT = 8000
 
@@ -23,6 +24,7 @@ app.use(session({
 
 app.use(indexRouter)
 app.use(addRouter)
+app.use(destroyRouter)
 
 app.listen(PORT, () => {
 	console.log(`+ server is running at ${PORT}`)
