@@ -1,0 +1,15 @@
+{
+  "name": "express-session",
+  "version": "1.0.0",
+  "description": "A just example of using sessions in express.js",
+  "main": "main.js",
+  "scripts": {
+    "test": "nodemon main.js"
+  },
+  "author": "balkytelgara",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-session": "^1.17.3"
+  }
+}

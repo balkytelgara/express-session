@@ -1,0 +1,31 @@
+<style>
+	* {
+		font-family: Helvetica;
+	}
+	div {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	form {
+		display: flex;
+		flex-direction: column;
+		gap: 1em;
+	}
+	input, button {
+		padding: 1em;
+		font-size: 18px;
+		outline: none;
+	}
+	button {
+		cursor: pointer;
+	}
+</style>
+<div>
+	<h1>Add something to list</h1>
+	<form action="/add" method="POST">
+		<input type="text" placeholder="cat, dog..." name="item">
+		<button type="submit">Submit</button>
+	</form>
+</div>
